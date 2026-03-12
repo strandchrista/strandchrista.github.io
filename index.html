@@ -1,297 +1,1037 @@
-export default function InsitePerspectiveFullSiteMockup() {
-  const services = [
-    {
-      title: 'Market Strategy',
-      subtitle: 'For early-stage founders entering the built environment',
-      text:
-        'Pressure-test assumptions and translate building innovation into a market strategy grounded in how projects are financed, approved, and delivered.',
-      outcomes: ['Identify the real buyer', 'Validate the pain point', 'Define a credible market entry strategy'],
-      featured: false,
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="GIEyj4YeXKqx7vQuiQngTfl1giOIjLtUXaO9HyIjdT0" />
+  <title>Insite Perspective | Strategic Advisory for the Built Environment</title>
+  <meta name="description" content="Insite Perspective is a Vancouver-based boutique advisory practice helping founders, investors, developers, and public-sector leaders translate innovation into adoption in the built environment." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Christa Strand" />
+  <meta name="theme-color" content="#6c4fb7" />
+  <meta name="keywords" content="Insite Perspective, Christa Strand, built environment advisory, proptech advisor, contech advisor, innovation adoption, strategic advisory, Vancouver, construction innovation, real estate development advisory" />
+  <link rel="canonical" href="https://insiteperspective.com/" />
+  <link rel="icon" type="image/png" href="faviconbrowser.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="faviconiPhone.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="faviconAndroid.png">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Insite Perspective | Strategic Advisory for the Built Environment" />
+  <meta property="og:description" content="Boutique strategic advisory helping innovation gain traction across construction, development, and the built environment." />
+  <meta property="og:url" content="https://insiteperspective.com/" />
+  <meta property="og:site_name" content="Insite Perspective" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Insite Perspective | Strategic Advisory for the Built Environment" />
+  <meta name="twitter:description" content="Helping founders, investors, and industry leaders translate innovation into adoption in the built environment." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Insite Perspective",
+    "url": "https://insiteperspective.com/",
+    "email": "hello@insiteperspective.com",
+    "areaServed": "Vancouver, British Columbia, Canada",
+    "founder": {
+      "@type": "Person",
+      "name": "Christa Strand"
     },
-    {
-      title: 'Adoption Strategy',
-      subtitle: 'For companies navigating industry decision systems',
-      text:
-        'Map the ecosystem of owners, consultants, contractors, and regulators to understand how decisions actually happen — and where innovation can gain traction.',
-      outcomes: ['Stakeholder and incentive mapping', 'Adoption pathways for real projects', 'Clear positioning for industry traction'],
-      featured: true,
-    },
-    {
-      title: 'Technology & Innovation Advisory',
-      subtitle: 'For owners, investors, and public-sector partners',
-      text:
-        'Provide independent perspective on emerging technologies, pilot programs, and partnerships shaping the built environment.',
-      outcomes: ['Evaluate new technologies and opportunities', 'Understand implementation risks and barriers', 'Identify where innovation can deliver real value'],
-      featured: false,
-    },
-  ];
+    "description": "Boutique strategic advisory for innovation adoption in the built environment, spanning construction, development, and real estate.",
+    "sameAs": [
+      "https://www.linkedin.com/in/christa-strand/"
+    ]
+  }
+  </script>
 
-  const who = [
-    'ConTech and PropTech founders',
-    'Climate and building technology startups',
-    'Investors evaluating construction innovation',
-    'Developers and public-sector organizations exploring new solutions',
-  ];
+  <style>
+    :root {
+      --brand: #6c4fb7;
+      --brand-light: #e4d8ee;
+      --brand-mid: #c5aee3;
+      --ink: #2a2435;
+      --muted: #5f5670;
+      --soft: #7d7390;
+      --page: #faf8f5;
+      --card: #ffffff;
+      --navy: #3d5a80;
+      --navy-light: #eef2f8;
+      --maroon: #7b3a6e;
+      --line: #e6deef;
+      --shadow: 0 18px 50px rgba(108,79,183,.12);
+      --radius: 26px;
+      --max: 1200px;
+    }
 
-  const engagements = [
-    {
-      format: '2–4 weeks or focused advisory sessions',
-      title: 'Diagnostic Engagement',
-      text: 'Short, focused work designed to clarify a problem, test assumptions, and identify where value and traction are most likely to emerge.',
-    },
-    {
-      format: '4–12 week strategic projects',
-      title: 'Project Engagement',
-      text: 'Structured work centered on market strategy, stakeholder mapping, positioning, and adoption planning for real-world implementation.',
-    },
-    {
-      format: 'Retainer-based or periodic strategy support',
-      title: 'Fractional Advisor',
-      text: 'Ongoing senior-level advisory support for organizations navigating partnerships, pilots, market entry, and complex industry decision systems.',
-    },
-  ];
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      color: var(--ink);
+      background: var(--page);
+      line-height: 1.6;
+    }
 
-  return (
-    <div className="min-h-screen bg-[#faf8f5] text-[#2a2435]">
-      <header className="sticky top-0 z-30 border-b border-[#cebde0] bg-[rgba(228,216,238,0.94)] backdrop-blur-md">
-        <div className="mx-auto flex min-h-[96px] max-w-7xl items-center justify-between gap-6 px-6 md:px-10">
-          <div className="text-2xl font-semibold tracking-tight text-[#6c4fb7]">Insite Perspective</div>
-          <nav className="hidden items-center gap-8 text-sm font-medium text-[#5f5670] md:flex">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Who I Work With</a>
-            <a href="#">Contact</a>
-            <button className="rounded-full bg-[#6c4fb7] px-5 py-3 text-white shadow-sm">Let’s talk</button>
-          </nav>
-        </div>
-      </header>
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    .container { width: min(calc(100% - 2rem), var(--max)); margin: 0 auto; }
 
-      <main>
-        <section className="overflow-hidden px-6 py-14 md:px-10 md:py-20">
-          <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
-            <div>
-              <p className="mb-6 inline-block border-l-[3px] border-[#7b3a6e] pl-4 text-[0.82rem] font-bold uppercase tracking-[0.18em] text-[#7b3a6e]">
-                Boutique strategic advisory<br />for the built environment
-              </p>
-              <h1 className="max-w-[12ch] font-serif text-5xl leading-none tracking-[-0.02em] text-[#2a2435] md:text-7xl">
-                Translating innovation into adoption in the built environment.
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f5670]">
-                Insite Perspective is a Vancouver-based boutique advisory practice helping founders, investors, developers, and public-sector leaders navigate the realities of construction, development, and project delivery.
-              </p>
-              <p className="mt-4 max-w-2xl text-[1.02rem] leading-8 text-[#7d7390]">
-                With more than 20 years of experience, Christa Strand helps clients understand how decisions are actually made and how to position innovation so it gains traction in the real world.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <button className="rounded-full bg-[#6c4fb7] px-6 py-3.5 text-sm font-semibold text-white shadow-sm">Book a conversation</button>
-                <button className="rounded-full border border-[#c5aee3] px-6 py-3.5 text-sm font-semibold text-[#6c4fb7]">Explore services</button>
-              </div>
-            </div>
+    .eyebrow {
+      font-size: .75rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--brand);
+    }
 
-            <div className="relative min-h-[520px]">
-              <div className="absolute left-[-14px] top-[14px] h-[calc(100%-8px)] w-[calc(100%-8px)] rounded-[30px] border-2 border-[#c5aee3]" />
-              <div className="relative flex min-h-[520px] items-end overflow-hidden rounded-[30px] border border-[#ddd0ee] bg-gradient-to-br from-[#efe6f8] via-[#f7f2fc] to-[#ece4f4] shadow-[0_18px_50px_rgba(108,79,183,.12)]">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(108,79,183,.16),transparent_30%),radial-gradient(circle_at_72%_24%,rgba(123,58,110,.14),transparent_28%),linear-gradient(180deg,transparent_0%,rgba(61,90,128,.08)_100%)]" />
-                <div className="relative z-10 w-full bg-gradient-to-t from-[rgba(255,255,255,0.85)] to-transparent p-8">
-                  <div className="inline-flex rounded-full border border-[rgba(108,79,183,.16)] bg-white/90 px-4 py-2 text-sm font-semibold text-[#6c4fb7]">
-                    Built environment innovation
-                  </div>
-                  <div className="mt-5 grid gap-3 max-w-[80%]">
-                    <div className="h-3 rounded-full bg-gradient-to-r from-[rgba(108,79,183,.20)] to-[rgba(108,79,183,.06)]" />
-                    <div className="h-3 rounded-full bg-gradient-to-r from-[rgba(108,79,183,.18)] to-[rgba(108,79,183,.06)]" />
-                    <div className="h-3 w-[62%] rounded-full bg-gradient-to-r from-[rgba(108,79,183,.18)] to-[rgba(108,79,183,.06)]" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    .section { padding: 88px 0; }
+    .section-alt {
+      background: #f7f2fc;
+      border-top: 1px solid #ddd0ee;
+      border-bottom: 1px solid #ddd0ee;
+    }
+    .section-navy {
+      background: var(--navy-light);
+      border-top: 1px solid #d0dae8;
+      border-bottom: 1px solid #d0dae8;
+    }
 
-        <section className="border-y border-[#ddd0ee] bg-[#f7f2fc] px-6 py-20 md:px-10">
-          <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#6c4fb7]">Why Insite Perspective</p>
-              <div className="my-5 h-[3px] w-12 rounded-full bg-gradient-to-r from-[#6c4fb7] to-[#7b3a6e]" />
-              <h2 className="max-w-xl font-serif text-4xl leading-tight md:text-5xl">A practical bridge between technical potential and industry adoption.</h2>
-              <p className="mt-5 max-w-xl text-[1.03rem] leading-8 text-[#5f5670]">
-                The built environment is complex, fragmented, and slow to adopt change. Strong ideas often stall not because the innovation is weak, but because the path to buy-in, procurement, and implementation is unclear. Insite Perspective helps clients close that gap.
-              </p>
-            </div>
+    .divider {
+      width: 48px;
+      height: 3px;
+      border-radius: 999px;
+      margin: 14px 0 22px;
+      background: linear-gradient(90deg, var(--brand), var(--maroon));
+    }
 
-            <div className="grid gap-5 md:grid-cols-2">
-              {[
-                ['Built for real-world decisions', 'Advice shaped by how projects are financed, approved, procured, and delivered.'],
-                ['Sector fluency', 'Experience across construction, engineering, development, and owner-side decision-making.'],
-                ['Strategic positioning', 'Clarifying where value lands, who needs to say yes, and what it takes to gain traction.'],
-                ['High-touch advisory', 'A boutique model designed for selective, senior-level collaboration.'],
-              ].map(([title, text]) => (
-                <div key={title} className="rounded-[26px] border border-[#e6deef] bg-white p-7 shadow-[0_6px_18px_rgba(108,79,183,.05)]">
-                  <p className="mb-2 text-sm font-bold text-[#6c4fb7]">{title}</p>
-                  <p className="text-[0.96rem] leading-7 text-[#5f5670]">{text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 999px;
+      padding: 14px 26px;
+      font-size: .95rem;
+      font-weight: 600;
+      transition: transform .18s ease, opacity .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+      min-height: 48px;
+    }
 
-        <section className="px-6 py-20 md:px-10">
-          <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
-            <div className="relative min-h-[470px]">
-              <div className="relative flex min-h-[470px] items-end overflow-hidden rounded-[30px] border border-[#e2d8ef] bg-gradient-to-br from-[rgba(108,79,183,.14)] via-[rgba(255,255,255,.95)] to-[#e8e0f0] shadow-[0_18px_50px_rgba(108,79,183,.12)]">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_18%,rgba(123,58,110,.16),transparent_20%),radial-gradient(circle_at_25%_30%,rgba(108,79,183,.14),transparent_26%)]" />
-                <div className="relative z-10 flex h-full w-full items-center justify-center p-8 text-center text-[#7d7390]">
-                  Portrait image area
-                </div>
-              </div>
-              <div className="absolute bottom-[-10px] right-[-10px] rounded-[18px] bg-gradient-to-br from-[#7b3a6e] to-[#b06a9e] px-5 py-4 text-white shadow-[0_10px_24px_rgba(123,58,110,.28)]">
-                <div className="font-serif text-3xl leading-none">20+</div>
-                <div className="mt-1 text-[0.72rem] uppercase tracking-[0.14em]">Years experience</div>
-              </div>
-            </div>
+    .btn:hover { transform: translateY(-1px); }
 
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#6c4fb7]">About</p>
-              <div className="my-5 h-[3px] w-12 rounded-full bg-gradient-to-r from-[#6c4fb7] to-[#7b3a6e]" />
-              <h2 className="font-serif text-4xl leading-tight md:text-5xl">Perspective shaped by more than two decades inside the industry.</h2>
-              <p className="mt-5 text-[1.03rem] leading-8 text-[#5f5670]">
-                I’m Christa, founder of Insite Perspective. Over the course of my career, I have worked across engineering, construction, and real estate development, leading complex projects from early strategy through procurement and delivery. I have sat on multiple sides of the table and understand how buildings are actually approved, financed, and built.
-              </p>
-              <p className="mt-4 text-[1.03rem] leading-8 text-[#7d7390]">
-                That breadth of experience has shown me where promising ideas tend to break down: not necessarily in design, but in the handoff between technical potential and industry adoption. I help clients bridge that gap by bringing a practical understanding of execution risk, stakeholder dynamics, and what it takes to earn buy-in inside real projects.
-              </p>
-            </div>
-          </div>
+    .btn-primary {
+      background: var(--brand);
+      color: white;
+    }
 
-          <div className="mx-auto mt-14 grid max-w-7xl gap-5 lg:grid-cols-3">
-            {[
-              ['Cross-functional perspective', 'Experience across engineering, development, construction, and owner-side decision-making.'],
-              ['Execution-minded strategy', 'Advice grounded in how projects are procured, financed, and delivered rather than abstract theory.'],
-              ['Selective, high-touch work', 'A boutique model designed for depth, discretion, and direct strategic collaboration.'],
-            ].map(([title, text]) => (
-              <div key={title} className="rounded-[26px] border border-[#e6deef] bg-white p-7 shadow-[0_6px_18px_rgba(108,79,183,.05)]">
-                <h3 className="text-[1.05rem] font-bold">{title}</h3>
-                <p className="mt-3 text-[0.96rem] leading-7 text-[#5f5670]">{text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+    .btn-primary:hover { opacity: .92; }
 
-        <section className="bg-white px-6 py-20 md:px-10">
-          <div className="mx-auto max-w-7xl">
-            <div className="max-w-3xl">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#6c4fb7]">Services</p>
-              <div className="my-5 h-[3px] w-12 rounded-full bg-gradient-to-r from-[#6c4fb7] to-[#7b3a6e]" />
-              <h2 className="font-serif text-4xl leading-tight md:text-5xl">Strategic advisory for innovation in the built environment.</h2>
-              <p className="mt-5 text-[1.03rem] leading-8 text-[#5f5670]">
-                Bringing innovation into the built environment is rarely straightforward. Founders often discover that the buyer is not who they expected, the decision process is unclear, and the path to adoption runs through a complex network of stakeholders.
-              </p>
-              <p className="mt-4 text-[1.03rem] leading-8 text-[#7d7390]">
-                I help organizations navigate these realities by clarifying where value lands, how decisions are made, and what conditions need to exist for innovation to gain traction in real projects.
-              </p>
-            </div>
+    .btn-secondary {
+      border: 1.5px solid var(--brand-mid);
+      color: var(--brand);
+      background: transparent;
+    }
 
-            <div className="mt-12 grid gap-5 lg:grid-cols-3">
-              {services.map((service) => (
-                <article
-                  key={service.title}
-                  className={`flex h-full flex-col rounded-[28px] border p-7 shadow-[0_8px_24px_rgba(108,79,183,.06)] ${
-                    service.featured
-                      ? 'border-[#d8c8f0] bg-gradient-to-br from-[#f7f2fc] to-[#efe5f9] shadow-[0_14px_34px_rgba(108,79,183,.10)]'
-                      : 'border-[#e6deef] bg-white'
-                  }`}
-                >
-                  <p className="mb-4 text-[0.8rem] font-semibold leading-6 text-[#6c4fb7]">{service.subtitle}</p>
-                  <h3 className="font-serif text-[1.75rem] leading-tight">{service.title}</h3>
-                  <p className="mt-4 text-[0.97rem] leading-7 text-[#5f5670]">{service.text}</p>
-                  <div className="mt-6 border-t border-[#e6deef] pt-5">
-                    <p className="mb-4 text-[0.8rem] font-bold uppercase tracking-[0.14em] text-[#7d7390]">Outcomes</p>
-                    <ul className="grid gap-3">
-                      {service.outcomes.map((item) => (
-                        <li key={item} className="flex gap-3 text-[0.95rem] leading-6 text-[#2a2435]">
-                          <span className="mt-2 h-2 w-2 rounded-full bg-[#6c4fb7]" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
+    .btn-secondary:hover { background: var(--brand-light); }
 
-        <section className="border-y border-[#ddd0ee] bg-[#f7f2fc] px-6 py-20 md:px-10">
-          <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#6c4fb7]">Who I work with</p>
-              <div className="my-5 h-[3px] w-12 rounded-full bg-gradient-to-r from-[#6c4fb7] to-[#7b3a6e]" />
-              <h2 className="font-serif text-4xl leading-tight md:text-5xl">Trusted by people working at the edge of industry change.</h2>
-              <p className="mt-5 text-[1.03rem] leading-8 text-[#5f5670]">
-                I work with organizations and decision-makers trying to move promising ideas through a complex industry system.
-              </p>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              {who.map((item) => (
-                <div key={item} className="rounded-[22px] border border-[#e6deef] bg-white p-6 shadow-[0_4px_14px_rgba(108,79,183,.05)] text-[1rem] leading-7 text-[#2a2435]">
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+    .btn-white {
+      background: white;
+      color: var(--brand);
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
 
-        <section className="border-y border-[#d0dae8] bg-[#eef2f8] px-6 py-20 md:px-10">
-          <div className="mx-auto max-w-7xl">
-            <div className="max-w-3xl">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#3d5a80]">How we work together</p>
-              <div className="my-5 h-[3px] w-12 rounded-full bg-gradient-to-r from-[#3d5a80] to-[#6c4fb7]" />
-              <h2 className="font-serif text-4xl leading-tight md:text-5xl">Flexible engagement models, shaped around the stage and complexity of your work.</h2>
-              <p className="mt-5 text-[1.03rem] leading-8 text-[#5f5670]">
-                Engagements range from short diagnostic sessions to multi-month strategic projects and ongoing advisory relationships.
-              </p>
-            </div>
+    .btn-ghost {
+      border: 1.5px solid rgba(255,255,255,.45);
+      color: white;
+      background: transparent;
+    }
 
-            <div className="mt-12 grid gap-5 lg:grid-cols-3">
-              {engagements.map((item) => (
-                <div key={item.title} className="flex h-full flex-col rounded-[28px] border border-[#d8e1ee] bg-white p-7 shadow-[0_8px_24px_rgba(61,90,128,.06)]">
-                  <h3 className="font-serif text-[1.7rem] leading-tight">{item.title}</h3>
-                  <p className="mt-2 text-[0.78rem] font-bold uppercase tracking-[0.14em] text-[#3d5a80]">{item.format}</p>
-                  <p className="mt-4 text-[0.97rem] leading-7 text-[#5f5670]">{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+    .btn svg { width: 18px; height: 18px; }
 
-        <section className="px-6 py-20 md:px-10">
-          <div className="mx-auto max-w-7xl">
-            <div className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#6c4fb7] to-[#8a68cc] px-8 py-12 text-white shadow-[0_24px_80px_rgba(108,79,183,.28)] md:px-12 md:py-16">
-              <div className="absolute right-[-80px] top-[-80px] h-[320px] w-[320px] rounded-full bg-[radial-gradient(circle,rgba(123,58,110,.42),transparent_70%)]" />
-              <div className="absolute bottom-[-60px] left-[28%] h-[240px] w-[240px] rounded-full bg-[radial-gradient(circle,rgba(61,90,128,.30),transparent_70%)]" />
-              <div className="relative z-10 max-w-3xl">
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-white/75">Contact</p>
-                <div className="my-5 h-[3px] w-12 rounded-full bg-gradient-to-r from-[#c5aee3] to-[#e4d8ee]" />
-                <h2 className="font-serif text-4xl leading-tight md:text-5xl">Let’s talk.</h2>
-                <p className="mt-5 max-w-3xl text-[1.03rem] leading-8 text-white/90">
-                  If you are navigating a strategic decision in the built environment and would benefit from an outside perspective grounded in real project experience, I would welcome the opportunity to connect.
-                </p>
-                <div className="mt-8 flex flex-wrap gap-4">
-                  <button className="rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#6c4fb7] shadow-sm">Book through Calendly</button>
-                  <button className="rounded-full border border-white/45 px-6 py-3.5 text-sm font-semibold text-white">Email me directly</button>
-                  <button className="rounded-full border border-white/45 px-6 py-3.5 text-sm font-semibold text-white">Connect on LinkedIn</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(228,216,238,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid #cebde0;
+    }
 
-      <footer className="px-6 pb-12 pt-4 text-[0.92rem] text-[#7d7390] md:px-10">
-        <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 border-t border-[#e6deef] pt-5">
-          <span>© Insite Perspective</span>
-          <span>Vancouver, BC · hello@insiteperspective.com</span>
-        </div>
-      </footer>
+    .header-inner {
+      min-height: 116px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
+    }
+
+    .logo {
+      height: 132px;
+      width: auto;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-link {
+      font-size: .94rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .nav-link:hover { color: var(--brand); }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: var(--ink);
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .menu-toggle svg { width: 28px; height: 28px; }
+
+    .hero {
+      padding: 56px 0 76px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 56px;
+      align-items: center;
+      min-height: 620px;
+    }
+
+    .hero-tagline {
+      display: inline-block;
+      padding-left: 14px;
+      border-left: 3px solid var(--maroon);
+      color: var(--maroon);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4.15rem);
+      line-height: 1.05;
+      margin: 0 0 20px;
+      font-weight: 400;
+      letter-spacing: -.02em;
+      max-width: 12ch;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 58ch;
+      margin: 0 0 14px;
+      line-height: 1.8;
+    }
+
+    .sublead {
+      font-size: 1rem;
+      color: var(--soft);
+      max-width: 58ch;
+      margin: 0 0 34px;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 520px;
+    }
+
+    .frame-outline {
+      position: absolute;
+      inset: 14px auto auto -14px;
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
+      border: 2px solid var(--brand-mid);
+      border-radius: 30px;
+    }
+
+    .hero-card {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(145deg, rgba(228,216,238,.88), rgba(245,238,255,.98)),
+        linear-gradient(180deg, #f8f4fc, #ece4f4);
+      height: 100%;
+      min-height: 520px;
+      border: 1px solid #ddd0ee;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(108,79,183,.18), transparent 30%),
+        radial-gradient(circle at 70% 25%, rgba(123,58,110,.14), transparent 28%),
+        linear-gradient(180deg, transparent 0%, rgba(61,90,128,.10) 100%);
+    }
+
+    .placeholder-content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: 34px;
+      display: grid;
+      gap: 14px;
+      align-self: stretch;
+      align-content: end;
+      background: linear-gradient(180deg, transparent 35%, rgba(255,255,255,.78) 100%);
+    }
+
+    .placeholder-chip {
+      display: inline-flex;
+      width: fit-content;
+      background: rgba(255,255,255,.88);
+      border: 1px solid rgba(108,79,183,.16);
+      color: var(--brand);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: .82rem;
+      font-weight: 600;
+    }
+
+    .placeholder-lines {
+      display: grid;
+      gap: 10px;
+      max-width: 85%;
+    }
+
+    .placeholder-line {
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(108,79,183,.18), rgba(108,79,183,.06));
+    }
+
+    .placeholder-line.short { width: 60%; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .info-card-grid,
+    .service-grid,
+    .model-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .info-card-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .service-grid,
+    .model-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 6px 18px rgba(108,79,183,.05);
+    }
+
+    .card.featured {
+      background: linear-gradient(135deg,#f5eeff,#ede2f8);
+      border-color: #d8c8f0;
+      box-shadow: 0 12px 32px rgba(108,79,183,.10);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.25;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+      font-size: .96rem;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .tiny-title {
+      font-size: .84rem;
+      font-weight: 700;
+      color: var(--brand);
+      margin: 0 0 6px;
+    }
+
+    .portrait {
+      position: relative;
+      min-height: 470px;
+    }
+
+    .portrait-card {
+      position: relative;
+      min-height: 470px;
+      border-radius: 30px;
+      overflow: hidden;
+      background:
+        linear-gradient(160deg, rgba(108,79,183,.14), rgba(255,255,255,.95)),
+        linear-gradient(180deg, #f5effb 0%, #e8e0f0 100%);
+      border: 1px solid #e2d8ef;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .portrait-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 65% 18%, rgba(123,58,110,.16), transparent 20%),
+        radial-gradient(circle at 25% 30%, rgba(108,79,183,.14), transparent 26%);
+    }
+
+    .portrait-badge {
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+      background: linear-gradient(135deg,#7b3a6e,#b06a9e);
+      color: white;
+      border-radius: 18px;
+      padding: 14px 18px;
+      box-shadow: 0 10px 24px rgba(123,58,110,.28);
+      z-index: 2;
+    }
+
+    .portrait-badge strong {
+      display: block;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.55rem;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .portrait-badge span {
+      font-size: .72rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      opacity: .92;
+    }
+
+    .bullet-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+    }
+
+    .bullet-item {
+      background: white;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      padding: 18px 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,.04);
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      margin-top: 8px;
+      border-radius: 50%;
+      flex: 0 0 auto;
+      background: var(--maroon);
+    }
+
+    .services-intro {
+      max-width: 760px;
+      margin-bottom: 44px;
+    }
+
+    .services-grid-refined,
+    .engagement-grid-refined {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 20px;
+    }
+
+    .service-card-refined {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 30px 28px;
+      box-shadow: 0 8px 24px rgba(108,79,183,.06);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .service-card-refined.featured {
+      background: linear-gradient(135deg,#f7f2fc,#efe5f9);
+      border-color: #d8c8f0;
+      box-shadow: 0 14px 34px rgba(108,79,183,.10);
+    }
+
+    .service-kicker {
+      font-size: .78rem;
+      line-height: 1.5;
+      font-weight: 600;
+      color: var(--brand);
+      margin: 0 0 14px;
+    }
+
+    .service-card-refined h3 {
+      margin: 0 0 14px;
+      font-size: 1.45rem;
+      font-weight: 400;
+      line-height: 1.18;
+    }
+
+    .service-card-refined > p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.76;
+      font-size: .97rem;
+    }
+
+    .outcomes-block {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .outcomes-title {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--soft);
+      margin: 0 0 14px;
+    }
+
+    .outcomes-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .outcomes-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--ink);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+
+    .outcomes-list li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-top: 7px;
+      border-radius: 50%;
+      flex: 0 0 auto;
+      background: var(--brand);
+    }
+
+    .who-wrap {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .who-grid-refined {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 16px;
+    }
+
+    .who-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px 22px;
+      box-shadow: 0 4px 14px rgba(108,79,183,.05);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    .engagement-card-refined {
+      background: white;
+      border: 1px solid #d8e1ee;
+      border-radius: 28px;
+      padding: 30px 28px;
+      box-shadow: 0 8px 24px rgba(61,90,128,.06);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .engagement-card-refined h3 {
+      margin: 0 0 12px;
+      font-size: 1.42rem;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .engagement-format {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 0 0 14px;
+    }
+
+    .engagement-card-refined p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.76;
+      font-size: .97rem;
+    }
+
+    .contact-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: 32px;
+      padding: 64px 60px;
+      color: white;
+      background: linear-gradient(135deg,#6c4fb7,#8a68cc);
+      box-shadow: 0 24px 80px rgba(108,79,183,.28);
+    }
+
+    .contact-wrap::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      right: -80px;
+      top: -80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(123,58,110,.42), transparent 70%);
+    }
+
+    .contact-wrap::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      left: 28%;
+      bottom: -60px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(61,90,128,.30), transparent 70%);
+    }
+
+    .contact-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    footer {
+      padding: 28px 0 48px;
+      color: var(--soft);
+      font-size: .92rem;
+    }
+
+    .footer-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .two-col,
+      .service-grid,
+      .model-grid,
+      .info-card-grid,
+      .bullet-grid,
+      .services-grid-refined,
+      .engagement-grid-refined,
+      .who-wrap,
+      .who-grid-refined {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 420px;
+      }
+
+      .hero-card,
+      .portrait-card {
+        min-height: 420px;
+      }
+
+      .header-inner {
+        min-height: 96px;
+      }
+
+      .logo {
+        height: 96px;
+      }
+
+      nav {
+        position: fixed;
+        inset: 96px 0 auto 0;
+        background: rgba(250,248,245,.98);
+        border-bottom: 1px solid var(--line);
+        padding: 18px 1rem 22px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+
+      nav.open { display: flex; }
+      .menu-toggle { display: inline-flex; }
+      .desktop-cta { display: none; }
+    }
+
+    @media (max-width: 640px) {
+      .section { padding: 68px 0; }
+      .hero { padding: 32px 0 60px; }
+      .container { width: min(calc(100% - 1.25rem), var(--max)); }
+      h1 { font-size: 2.45rem; }
+      .lead, .sublead { font-size: 1rem; }
+      .contact-wrap { padding: 40px 24px; }
+      .btn { width: 100%; }
+      .hero-actions .btn,
+      .contact-actions .btn { justify-content: center; }
+      .portrait-badge {
+        right: 12px;
+        bottom: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="brand-lockup" href="#top" aria-label="Insite Perspective home">
+        <img class="logo" src="logo.png" alt="Insite Perspective logo" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+      <nav id="siteNav" aria-label="Primary">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#who">Who I Work With</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary desktop-cta" href="#contact">Let’s talk</a>
+      </nav>
     </div>
-  );
-}
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-tagline">Boutique strategic advisory<br>for the built environment</p>
+          <h1 class="serif">Translating innovation into adoption in the built environment.</h1>
+          <p class="lead">Insite Perspective is a Vancouver-based boutique advisory practice helping founders, investors, developers, and public-sector leaders navigate the realities of construction, development, and project delivery.</p>
+          <p class="sublead">With more than 20 years of experience, Christa Strand helps clients understand how decisions are actually made and how to position innovation so it gains traction in the real world.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a conversation</a>
+            <a href="#services" class="btn btn-secondary">Explore services</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Website hero image placeholder">
+          <div class="frame-outline" aria-hidden="true"></div>
+          <div class="hero-card">
+            <img src="heroimage.jpg" alt="Built environment innovation">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="why">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Why Insite Perspective</p>
+          <div class="divider"></div>
+          <h2 class="serif" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.15; margin: 0 0 16px;">A practical bridge between technical potential and industry adoption.</h2>
+          <p style="font-size: 1.03rem; color: var(--muted); line-height: 1.82; margin: 0;">The built environment is complex, fragmented, and slow to adopt change. Strong ideas often stall not because the innovation is weak, but because the path to buy-in, procurement, and implementation is unclear. Insite Perspective helps clients close that gap.</p>
+        </div>
+
+        <div class="info-card-grid">
+          <div class="card">
+            <p class="tiny-title">Built for real-world decisions</p>
+            <p>Advice shaped by how projects are financed, approved, procured, and delivered.</p>
+          </div>
+          <div class="card">
+            <p class="tiny-title">Sector fluency</p>
+            <p>Experience across construction, engineering, development, and owner-side decision-making.</p>
+          </div>
+          <div class="card">
+            <p class="tiny-title">Strategic positioning</p>
+            <p>Clarifying where value lands, who needs to say yes, and what it takes to gain traction.</p>
+          </div>
+          <div class="card">
+            <p class="tiny-title">High-touch advisory</p>
+            <p>A boutique model designed for selective, senior-level collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div class="portrait">
+          <div class="portrait-card">
+            <img src="christaimage.jpg" alt="Christa Strand">
+          </div>
+
+          <div class="portrait-badge">
+            <strong>20+</strong>
+            <span>Years experience</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow">About</p>
+          <div class="divider"></div>
+          <h2 class="serif" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.15; margin: 0 0 18px;">Perspective shaped by more than two decades inside the industry.</h2>
+          <p style="font-size: 1.03rem; line-height: 1.82; color: var(--muted); margin: 0 0 16px;">I’m Christa, founder of Insite Perspective. Over the course of my career, I have worked across engineering, construction, and real estate development, leading complex projects from early strategy through procurement and delivery. I have sat on multiple sides of the table and understand how buildings are actually approved, financed, and built.</p>
+          <p style="font-size: 1.03rem; line-height: 1.82; color: var(--soft); margin: 0;">That breadth of experience has shown me where promising ideas tend to break down: not necessarily in design, but in the handoff between technical potential and industry adoption. I help clients bridge that gap by bringing a practical understanding of execution risk, stakeholder dynamics, and what it takes to earn buy-in inside real projects.</p>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top: 56px;">
+        <div class="service-grid">
+          <div class="card">
+            <p class="card-title">Cross-functional perspective</p>
+            <p>Experience across engineering, development, construction, and owner-side decision-making.</p>
+          </div>
+          <div class="card">
+            <p class="card-title">Execution-minded strategy</p>
+            <p>Advice grounded in how projects are procured, financed, and delivered rather than abstract theory.</p>
+          </div>
+          <div class="card">
+            <p class="card-title">Selective, high-touch work</p>
+            <p>A boutique model designed for depth, discretion, and direct strategic collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" style="background:white;">
+      <div class="container">
+        <div class="services-intro">
+          <p class="eyebrow">Services</p>
+          <div class="divider"></div>
+          <h2 class="serif" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.15; margin: 0 0 16px;">Strategic advisory for innovation in the built environment.</h2>
+          <p style="font-size: 1.03rem; color: var(--muted); line-height: 1.82; margin: 0 0 14px;">Bringing innovation into the built environment is rarely straightforward. Founders often discover that the buyer is not who they expected, the decision process is unclear, and the path to adoption runs through a complex network of stakeholders.</p>
+          <p style="font-size: 1.03rem; color: var(--soft); line-height: 1.82; margin: 0;">I help organizations navigate these realities by clarifying where value lands, how decisions are made, and what conditions need to exist for innovation to gain traction in real projects.</p>
+        </div>
+
+        <div class="services-grid-refined">
+          <article class="service-card-refined">
+            <p class="service-kicker">For early-stage founders entering the built environment</p>
+            <h3 class="serif">Market Strategy</h3>
+            <p>Many innovations struggle because the real buyer, incentive, or pain point is not yet clear. I help founders pressure-test assumptions and translate building innovation into a market strategy grounded in how projects are financed, approved, and delivered.</p>
+
+            <div class="outcomes-block">
+              <p class="outcomes-title">Outcomes</p>
+              <ul class="outcomes-list">
+                <li>Identify the real buyer</li>
+                <li>Validate the pain point</li>
+                <li>Define a credible market entry strategy</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card-refined featured">
+            <p class="service-kicker">For companies navigating industry decision systems</p>
+            <h3 class="serif">Adoption Strategy</h3>
+            <p>Even strong solutions stall if the pathway to adoption is unclear. I map the ecosystem of owners, consultants, contractors, and regulators to understand how decisions actually happen — and where innovation can gain traction.</p>
+
+            <div class="outcomes-block">
+              <p class="outcomes-title">Outcomes</p>
+              <ul class="outcomes-list">
+                <li>Stakeholder and incentive mapping</li>
+                <li>Adoption pathways for real projects</li>
+                <li>Clear positioning for industry traction</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card-refined">
+            <p class="service-kicker">For owners, investors, and public-sector partners</p>
+            <h3 class="serif">Technology &amp; Innovation Advisory</h3>
+            <p>I provide independent perspective on emerging technologies, pilot programs, and partnerships shaping the built environment.</p>
+
+            <div class="outcomes-block">
+              <p class="outcomes-title">Outcomes</p>
+              <ul class="outcomes-list">
+                <li>Evaluate new technologies and opportunities</li>
+                <li>Understand implementation risks and barriers</li>
+                <li>Identify where innovation can deliver real value</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="who">
+      <div class="container who-wrap">
+        <div>
+          <p class="eyebrow">Who I work with</p>
+          <div class="divider"></div>
+          <h2 class="serif" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.15; margin: 0 0 16px;">Trusted by people working at the edge of industry change.</h2>
+          <p style="font-size: 1.03rem; color: var(--muted); line-height: 1.82; margin: 0;">I work with organizations and decision-makers trying to move promising ideas through a complex industry system.</p>
+        </div>
+
+        <div class="who-grid-refined">
+          <div class="who-card">ConTech and PropTech founders</div>
+          <div class="who-card">Climate and building technology startups</div>
+          <div class="who-card">Investors evaluating construction innovation</div>
+          <div class="who-card">Developers and public-sector organizations exploring new solutions</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-navy" id="models">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: 44px;">
+          <p class="eyebrow" style="color: var(--navy);">How we work together</p>
+          <div class="divider" style="background: linear-gradient(90deg, var(--navy), var(--brand));"></div>
+          <h2 class="serif" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.15; margin: 0 0 16px;">Flexible engagement models, shaped around the stage and complexity of your work.</h2>
+          <p style="font-size: 1.03rem; color: var(--muted); line-height: 1.82; margin: 0;">Engagements range from short diagnostic sessions to multi-month strategic projects and ongoing advisory relationships.</p>
+        </div>
+
+        <div class="engagement-grid-refined">
+          <div class="engagement-card-refined">
+            <h3 class="serif">Diagnostic Engagement</h3>
+            <p class="engagement-format">2–4 weeks or focused advisory sessions</p>
+            <p>Short, focused work designed to clarify a problem, test assumptions, and identify where value and traction are most likely to emerge.</p>
+          </div>
+
+          <div class="engagement-card-refined">
+            <h3 class="serif">Project Engagement</h3>
+            <p class="engagement-format">4–12 week strategic projects</p>
+            <p>Structured work centered on market strategy, stakeholder mapping, positioning, and adoption planning for real-world implementation.</p>
+          </div>
+
+          <div class="engagement-card-refined">
+            <h3 class="serif">Fractional Advisor</h3>
+            <p class="engagement-format">Retainer-based or periodic strategy support</p>
+            <p>Ongoing senior-level advisory support for organizations navigating partnerships, pilots, market entry, and complex industry decision systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-inner">
+            <p class="eyebrow" style="color: rgba(255,255,255,.72);">Contact</p>
+            <div class="divider" style="background: linear-gradient(90deg,#c5aee3,#e4d8ee);"></div>
+            <h2 class="serif" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.15; margin: 0 0 16px;">Let’s talk.</h2>
+            <p style="font-size: 1.03rem; line-height: 1.82; color: rgba(255,255,255,.88); margin: 0; max-width: 56ch;">If you are navigating a strategic decision in the built environment and would benefit from an outside perspective grounded in real project experience, I would welcome the opportunity to connect.</p>
+
+            <div class="contact-actions">
+              <a href="https://calendly.com/strandchrista/website-connection" target="_blank" rel="noopener noreferrer" class="btn btn-white">Book through Calendly</a>
+              <a href="mailto:hello@insiteperspective.com?subject=Inquiry%20from%20Insite%20Perspective%20website" class="btn btn-ghost">Email me directly</a>
+              <a href="https://www.linkedin.com/in/christa-strand/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="Connect on LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.96 1.96 0 1 0 5.3 6.92 1.96 1.96 0 0 0 5.25 3ZM20.44 12.63c0-3.45-1.84-5.06-4.29-5.06-1.98 0-2.86 1.09-3.35 1.86V8.5H9.43c.04.62 0 11.5 0 11.5h3.37v-6.42c0-.34.02-.68.13-.92.27-.68.9-1.39 1.96-1.39 1.38 0 1.93 1.05 1.93 2.59V20h3.37v-7.37Z"/>
+                </svg>
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-line">
+      <span>© Insite Perspective</span>
+      <span>Vancouver, BC · <a href="mailto:hello@insiteperspective.com">hello@insiteperspective.com</a></span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('siteNav');
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
