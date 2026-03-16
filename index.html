@@ -754,6 +754,82 @@
         bottom: 12px;
       }
     }
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 36px 32px 32px;
+  box-shadow: 0 8px 24px rgba(108,79,183,.06);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonial-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.testimonial-logo-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-light), var(--brand-mid));
+  border: 2px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: .85rem;
+  letter-spacing: .08em;
+  color: var(--brand);
+}
+
+.testimonial-quote {
+  margin: 0;
+  padding: 0;
+  border: none;
+  flex: 1;
+}
+
+.testimonial-quote p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.82;
+  margin: 0 0 14px;
+}
+
+.testimonial-quote p:last-child {
+  margin: 0;
+}
+
+.testimonial-attribution {
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.testimonial-attribution strong {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.testimonial-attribution span {
+  font-size: .88rem;
+  color: var(--soft);
+}
+
   </style>
 </head>
 <body>
@@ -982,6 +1058,38 @@
         </div>
       </div>
     </section>
+
+<section class="section section-alt" id="testimonials">
+  <div class="container">
+    <p class="eyebrow">Client Perspectives</p>
+    <div class="divider"></div>
+    <h2 class="serif" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.15; margin: 0 0 44px; max-width: 18ch;">What clients are saying.</h2>
+
+    <div class="testimonial-grid">
+
+      <!-- TESTIMONIAL CARD — duplicate this block to add more -->
+      <article class="testimonial-card">
+        <div class="testimonial-logo-wrap">
+          <!-- Replace the div below with an <img> tag once you have the logo -->
+          <div class="testimonial-logo-placeholder">
+            <span>TBS</span>
+          </div>
+        </div>
+        <blockquote class="testimonial-quote">
+          <p>"Christa has been a huge help to our team. She has strong expertise across construction, building science, and sales and marketing, and has been incredibly valuable in connecting us with the right people, and learning about industry standards, expectations, and how to better navigate the space.</p>
+          <p>She is eager, enthusiastic, and generous with her time in reviewing our materials and brings deep industry insight, while also understanding the constraints and realities we face as a startup. Her support has been thoughtful, practical, and genuinely valuable."</p>
+        </blockquote>
+        <footer class="testimonial-attribution">
+          <strong>Oliver Zhang</strong>
+          <span>Co-founder, Tiny Box Systems</span>
+        </footer>
+      </article>
+      <!-- END TESTIMONIAL CARD -->
+
+    </div>
+  </div>
+</section>
+
 
     <section class="section" id="contact">
       <div class="container">
